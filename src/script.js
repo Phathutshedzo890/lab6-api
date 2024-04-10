@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const carList = document.getElementById('carList');
     cars = [];
     loadCarsBtn.addEventListener('click', () => {
-        fetch('https://yellow-river-040708c03.5.azurestaticapps.net',{model: 'no-cors'})
+        fetch('https://yellow-river-040708c03.5.azurestaticapps.net')
             .then(response => response.json())
             .then(data => {
                 cars = data;
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 function addCar(newCar) {
-    fetch('https://yellow-river-040708c03.5.azurestaticapps.net', mode,'no-cors', {
+    fetch('https://yellow-river-040708c03.5.azurestaticapps.net', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
