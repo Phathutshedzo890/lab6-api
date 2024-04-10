@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 function addCar(newCar) {
-    fetch('https://jolly-sea-099112303.5.azurestaticapps.net', {
+    fetch('https://jolly-sea-099112303.5.azurestaticapps.net', mode,'no cors', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
